@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: darkcyan;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+/****
+ROBOT
+****/
+.robot-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.robot-pic{
+    font-size: 6rem;
+    margin-top: 1%;
+    user-select: none;
+}
+.robot-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.robot-btn{
+    background-color: white;
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3% 5%;
+    border-radius: 15px;
+    box-shadow: 0px 0px 30px 0px black;
+    transition: 0.5s;
+}
+.img{
+    width: 50%;
+    user-select: none;
+}
+
+
+/***
+USER
+***/
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-140%);
+}
+.btn{
+    background-color: white;
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 0 5%;
+    border-radius: 15px;
+    box-shadow: 0px 0px 30px 0px black;
+    transition: 0.5s;
+}
+.img{
+    width: 50%;
+    user-select: none;
+}
+.btn:hover{
+    transform: scale(1.2);
+}
+
+
+/****
+SCORE
+****/
+.score{
+    display: flex;
+    height: 50%;
+}
+.your-score{
+    background-color: white;
+    padding: 10px;
+    width: 6%;
+    height: 30%;
+    transform: translateX(50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0px 0px 30px 0px black;
+}
+.robot-score{
+    background-color: white;
+    padding: 10px;
+    width: 6%;
+    height: 30%;
+    transform: translateX(1415%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0px 0px 30px 0px black;
+}
+.points{
+    font-size: 4rem;
+    user-select: none;
+}
+
+
+/******
+REPLIES
+******/
+.replies{
+    display: none;
+    background-color: white;
+    width: 21%;
+    height: 25%;
+    border-radius: 10px;
+    transform: translate(186%, -290%);
+    box-shadow: 0px 0px 30px 0px black;
+    cursor: pointer;
+}
+.replies:hover{
+    background-color: rgb(221, 219, 219);
+}
+.message{
+    text-align: center;
+    font-size: 3rem;
+    user-select: none;
+    margin-top: 6%;
+}
+.dismiss{
+    text-align: center;
+    font-size: 1.3rem;
+    user-select: none;
+    margin-bottom: 8%;
+}

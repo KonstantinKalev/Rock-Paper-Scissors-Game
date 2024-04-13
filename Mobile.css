@@ -1,0 +1,119 @@
+@media only screen and (max-width:720px){
+    /****
+    ROBOT
+    ****/
+    .robot-pic{
+        margin-top: 3%;
+    }
+    .robot-btn{
+        width: 100px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 8% 5%;
+        border-radius: 15px;
+        box-shadow: 0px 0px 30px 0px black;
+        transition: 0.5s;
+    }
+    .img{
+        width: 90%;
+        user-select: none;
+    }
+
+
+    /***
+    USER
+    ***/
+    .buttons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translateY(-70%);
+    }
+    .btn{
+        background-color: white;
+        width: 100px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        margin: 0 5%;
+        border-radius: 15px;
+        box-shadow: 0px 0px 30px 0px black;
+        transition: 0.5s;
+    }
+    .img{
+        width: 90%;
+        user-select: none;
+    }
+
+
+    /****
+    SCORE
+    ****/
+    .score{
+        display: flex;
+        transform: translateY(20%);
+        height: 50%;
+    }
+    .your-score{
+        background-color: white;
+        padding: 10px;
+        width: 70px;
+        height: 70px;
+        transform: translateX(30%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+        box-shadow: 0px 0px 30px 0px black;
+    }
+    .robot-score{
+        background-color: white;
+        padding: 10px;
+        width: 70px;
+        height: 70px;
+        transform: translateX(360%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+        box-shadow: 0px 0px 30px 0px black;
+    }
+    .points{
+        font-size: 3rem;
+        user-select: none;
+    }
+
+
+    /******
+    REPLIES
+    ******/
+    .replies{
+        display: none;
+        background-color: white;
+        width: 170px;
+        height: 170px;
+        border-radius: 10px;
+        transform: translate(71%, -290%);
+        box-shadow: 0px 0px 30px 0px black;
+        cursor: pointer;
+    }
+    .replies:hover{
+        background-color: rgb(221, 219, 219);
+    }
+    .message{
+        text-align: center;
+        font-size: 3rem;
+        user-select: none;
+        margin-top: 25%;
+    }
+    .dismiss{
+        text-align: center;
+        font-size: 1rem;
+        user-select: none;
+        margin-bottom: 15%;
+    }
+}

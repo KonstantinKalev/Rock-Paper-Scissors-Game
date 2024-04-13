@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Rock, Paper, Scissors Game </title>
+    <link rel="stylesheet" href="Game.css">
+    <link rel="stylesheet" href="Mobile.css">
+</head>
+<body>
+    <div class="robot-div">
+        <p class="robot-pic"> 🤖 </p>
+    </div>
+
+    <div class="robot-buttons">
+        <div class="robot-rock robot-btn">
+            <img src="rock.png" class="img">
+        </div>
+        <div class="robot-paper robot-btn">
+            <img src="paper.png" class="img">
+        </div>
+        <div class="robot-scissors robot-btn">
+            <img src="scissors.png" class="img">
+        </div>
+    </div>
+
+    <div class="score">
+        <div class="your-score">
+            <p class="your-points points"> 0 </p>
+        </div>
+        <div class="robot-score">
+            <p class="robot-points points"> 0 </p>
+        </div>
+    </div>
+
+    <div class="buttons">
+        <div class="rock btn" onclick="rockClick()" onmouseover="rockOver()" onmouseout="rockOut()">
+            <img src="rock.png" class="img">
+        </div>
+        <div class="paper btn" onclick="paperClick()" onmouseover="paperOver()" onmouseout="paperOut()">
+            <img src="paper.png" class="img">
+        </div>
+        <div class="scissors btn" onclick="scissorsClick()" onmouseover="scissorsOver()" onmouseout="scissorsOut()">
+            <img src="scissors.png" class="img">
+        </div>
+    </div>
+
+
+    <div class="replies" onclick="messageClick()">
+        <b><p class="message"> You won! </p></b>
+        <p class="dismiss"> (click/tap on this <br> message to continue) </p>
+    </div>
+
+    <script>
+        if (!window.matchMedia('(max-width: 720px)').matches) {
+            var desktopScript = document.createElement('script');
+            desktopScript.src = 'Game.js';
+            document.head.appendChild(desktopScript);
+        }
+        if (window.matchMedia('(max-width: 720px)').matches) {
+            var mobileScript = document.createElement('script');
+            mobileScript.src = 'Mobile.js';
+            document.head.appendChild(mobileScript);
+        }
+    </script>
+</body>
+</html>
